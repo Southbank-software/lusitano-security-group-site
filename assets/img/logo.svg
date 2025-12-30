@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="440" viewBox="0 0 1200 440" role="img" aria-label="Lusitano Security Group logo - refined hierarchy">
+  <defs>
+    <style>
+      .bg { fill: #0B1320; }
+      .inkFill { fill: #FFFFFF; }
+      .muted { stroke: #B8C0CC; }
+
+      .accentG { fill: #0B6B3A; }
+      .accentR { fill: #C81D25; }
+      .accentY { fill: #D4AF37; }
+
+      .strokeMain {
+        stroke: #FFFFFF;
+        stroke-width: 8;
+        stroke-linecap: square;
+        stroke-linejoin: round;
+        fill: none;
+      }
+
+      .strokeMuted {
+        stroke: #B8C0CC;
+        stroke-width: 4;
+        fill: none;
+      }
+
+      .serifBrand {
+        font-family: "Cormorant Garamond", "Libre Baskerville", "Times New Roman", serif;
+        font-weight: 600;
+        letter-spacing: 2px;
+        fill: #FFFFFF;
+      }
+
+      .wordmarkSub {
+        font-family: "Montserrat", "Avenir Next", "Segoe UI", Arial, sans-serif;
+        font-weight: 500;
+        letter-spacing: 4px;
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" x="0" y="0" width="1200" height="440"/>
+
+  <!-- Shield -->
+  <g transform="translate(120,40)">
+    <!-- Shield outline -->
+    <path class="strokeMain" d="
+      M120 20
+      C170 20, 220 20, 270 20
+      C270 150, 240 240, 195 295
+      C170 325, 145 345, 120 365
+      C95 345, 70 325, 45 295
+      C0 240, -30 150, -30 20
+      C20 20, 70 20, 120 20 Z
+    "/>
+
+    <!-- LSG (upper third, brand serif) -->
+    <text x="120" y="125" text-anchor="middle" class="serifBrand" font-size="52">
+      LSG
+    </text>
+
+    <!-- Shortened Spear (bottom 2/3 only) -->
+    <line x1="120" y1="175" x2="120" y2="305" class="strokeMain"/>
+
+    <!-- Spear tip -->
+    <polygon points="120,165 104,190 136,190" class="inkFill"/>
+
+    <!-- Accent bars near spear base -->
+    <rect x="108" y="250" width="24" height="22" class="accentR"/>
+    <rect x="108" y="274" width="24" height="8" class="accentY"/>
+    <rect x="108" y="284" width="24" height="22" class="accentG"/>
+
+    <!-- Inner guide line -->
+    <line x1="120" y1="175" x2="120" y2="300" class="strokeMuted"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g transform="translate(420,190)">
+    <text x="0" y="0" class="serifBrand" font-size="64">
+      LUSITANO
+    </text>
+    <text x="0" y="64" class="wordmarkSub" font-size="26" fill="none" stroke="#B8C0CC" stroke-width="1.5">
+      SECURITY GROUP
+    </text>
+    <line x1="0" y1="92" x2="520" y2="92" class="strokeMuted"/>
+  </g>
+
+</svg>
